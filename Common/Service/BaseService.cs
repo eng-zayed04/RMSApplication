@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Common.Service
 {
-    internal class BaseService<T, TRm, TVm> where T : Entity where TRm : BaseRequestModel<T> where TVm : BaseViewModel<T>
+    public class BaseService<T, TRm, TVm> where T : Entity where TRm : BaseRequestModel<T> where TVm : BaseViewModel<T>
     {
         protected IBaseRepository<T> Repository;
 
