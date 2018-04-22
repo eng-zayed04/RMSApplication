@@ -1,4 +1,4 @@
-﻿using Common;
+﻿using Common.Model;
 
 namespace Model
 {
