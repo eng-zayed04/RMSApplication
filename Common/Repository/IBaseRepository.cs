@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace Common.Repository
 {
-    internal interface IBaseRepository<TEntity> where TEntity : Entity
+    public interface IBaseRepository<TEntity> where TEntity : Entity
     {
         IQueryable<TEntity> Get();
         TEntity GetById(string id);
